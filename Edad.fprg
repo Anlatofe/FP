@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Edad"/>
+        <attribute name="authors" value="ANLATOFE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-17 07:42:53 p.&#8239;m."/>
+        <attribute name="created" value="QU5MQVRPRkU7QUlST0tBOzIwMjYtMDQtMTc7MDc6MjE6MTcgcC7igK9tLjsxMDcwNA=="/>
+        <attribute name="edited" value="QU5MQVRPRkU7QUlST0tBOzIwMjYtMDQtMTc7MDc6NDI6NTMgcC7igK9tLjsxOzEwODE1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="FechaPersona, A&#241;oActual, EdadPersona" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite el a&#241;o actual&quot;" newline="True"/>
+            <input variable="A&#241;oActual"/>
+            <output expression="&quot;Digite el a&#241;o de nacimiento de la persona&quot;" newline="True"/>
+            <input variable="FechaPersona"/>
+            <assign variable="EdadPersona" expression="A&#241;oActual - FechaPersona"/>
+            <output expression="&quot;La edad de la persona es: &quot; &amp; EdadPersona" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
