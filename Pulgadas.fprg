@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Metros a pulgas"/>
+        <attribute name="authors" value="ANLATOFE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-17 07:21:14 p.&#8239;m."/>
+        <attribute name="created" value="QU5MQVRPRkU7QUlST0tBOzIwMjYtMDQtMTc7MDY6NTE6MjIgcC7igK9tLjsxMDcwMg=="/>
+        <attribute name="edited" value="QU5MQVRPRkU7QUlST0tBOzIwMjYtMDQtMTc7MDc6MjE6MTQgcC7igK9tLjsxOzEwODA5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="TotalPulgadas, TotalMetros" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite la cantidad de metros que necesita&quot;" newline="True"/>
+            <input variable="TotalMetros"/>
+            <assign variable="TotalPulgadas" expression="(TotalMetros * 100) / 2.54"/>
+            <output expression="&quot;La cantidad de pulgadas ser&#225; de &quot; &amp; TotalPulgadas" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
