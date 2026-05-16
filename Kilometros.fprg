@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Kilos en metros"/>
+        <attribute name="authors" value="ANLATOFE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-24 03:33:00 p.&#8239;m."/>
+        <attribute name="created" value="QU5MQVRPRkU7QUlST0tBOzIwMjYtMDQtMjE7MTI6NDM6MDAgcC7igK9tLjsxMDY5MQ=="/>
+        <attribute name="edited" value="QU5MQVRPRkU7QUlST0tBOzIwMjYtMDQtMjQ7MDM6MzM6MDAgcC7igK9tLjsyOzEwODAy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="KmConstante, KmSecundario, Horas, Minutos, Conversor" type="Real" array="False" size=""/>
+            <output expression="&quot;Calcularemos el tiempo que le tomar&#225; llegar de punto a hasta el punto b&quot;" newline="True"/>
+            <output expression="&quot;&#191;Cu&#225;l es la velocidad constante que va a usar? (Tenga en cuenta que esto se calcula en base a km/h)&quot;" newline="True"/>
+            <input variable="KmConstante"/>
+            <output expression="&quot;&#191;Cu&#225;ntos kilometros ser&#225; el recorrido a relacionar esta vez?&quot;" newline="True"/>
+            <input variable="KmSecundario"/>
+            <assign variable="Conversor" expression="(KmConstante / KmSecundario) * 60"/>
+            <assign variable="Minutos" expression="Conversor mod 60"/>
+            <assign variable="Horas" expression="int(Conversor / 60)"/>
+            <output expression="&quot;El tiempo que tarda para recorrer &quot; &amp; KmConstante &amp; &quot;km a una velocidad constante de &quot; &amp; KmSecundario &amp; &quot;km/h, es de &quot; &amp; Horas &amp; &quot; hora(s) con &quot; &amp; Minutos &amp; &quot; minuto(s) aproximadamente.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
