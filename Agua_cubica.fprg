@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Agua al cubo"/>
+        <attribute name="authors" value="ANLATOFE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-18 01:15:57 p.&#8239;m."/>
+        <attribute name="created" value="QU5MQVRPRkU7QUlST0tBOzIwMjYtMDQtMTg7MTI6NTA6MDcgcC7igK9tLjsxMDcwMg=="/>
+        <attribute name="edited" value="QU5MQVRPRkU7QUlST0tBOzIwMjYtMDQtMTg7MDE6MTU6NTcgcC7igK9tLjsxOzEwODE0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="AguaCubica, Ancho, Largo, Alto, Volumen, Precio" type="Real" array="False" size=""/>
+            <assign variable="AguaCubica" expression="100000"/>
+            <output expression="&quot;Necesitamos saber las medidas del lugar para saber cuanta agua necesitamos y as&#237; mismo su precio. Recuerde que las medidas deben de ser en m&#179;.&quot;" newline="True"/>
+            <output expression="&quot;Digite primero el ancho.&quot;" newline="True"/>
+            <input variable="Ancho"/>
+            <output expression="&quot;Digite ahora el largo.&quot;" newline="True"/>
+            <input variable="Largo"/>
+            <output expression="&quot;Ahora digite el alto.&quot;" newline="True"/>
+            <input variable="Alto"/>
+            <assign variable="Volumen" expression="Ancho * Alto * Largo"/>
+            <assign variable="Precio" expression="Volumen * AguaCubica"/>
+            <output expression="&quot;El volumen del lugar es de &quot; &amp; Volumen &amp; &quot;, por lo tanto el precio total ser&#225; de &quot; &amp; Precio" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

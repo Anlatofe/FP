@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Trivago"/>
+        <attribute name="authors" value="ANLATOFE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-17 06:03:07 p.&#8239;m."/>
+        <attribute name="created" value="QU5MQVRPRkU7QUlST0tBOzIwMjYtMDQtMTU7MDI6MjE6MjggcC7igK9tLjsxMDY5OQ=="/>
+        <attribute name="edited" value="QU5MQVRPRkU7QUlST0tBOzIwMjYtMDQtMTc7MDY6MDM6MDcgcC7igK9tLjsxMTsxMDg1OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Aire, Venti, Estandar, Total" type="Real" array="False" size=""/>
+            <declare name="DiasEstandar, DiasAire, DiasVenti" type="Integer" array="False" size=""/>
+            <declare name="Elige, Necesita" type="String" array="False" size=""/>
+            <assign variable="Aire" expression="80000"/>
+            <assign variable="Venti" expression="60000"/>
+            <assign variable="Estandar" expression="120000"/>
+            <assign variable="Total" expression="0"/>
+            <assign variable="DiasEstandar" expression="0"/>
+            <assign variable="DiasAire" expression="0"/>
+            <assign variable="DiasVenti" expression="0"/>
+            <output expression="&quot;Bienvenidos al hotel del precipicio. &#191;Desean alguna habitaci&#243;n? Les ofrecemos habitaciones con ventilador a $60000, con aire acondicionado a $80000 y una habitaci&#243;n est&#225;ndar de dos camas a $120000. Si se hospedan por 7 d&#237;as o m&#225;s les damos un descuento del 10% en el valor total.&quot;" newline="True"/>
+            <output expression="&quot;Responda Si o No.&quot;" newline="True"/>
+            <input variable="Necesita"/>
+            <if expression="(Necesita == &quot;Si&quot;) or (Necesita == &quot;si&quot;)">
+                <then>
+                    <do expression="(Necesita == &quot;Si&quot;) or (Necesita == &quot;si&quot;)">
+                        <output expression="&quot;&#191;Que habitaci&#243;n van a elegir?&quot;" newline="True"/>
+                        <output expression="&quot;Estandar - Venti - Aire&quot;" newline="True"/>
+                        <input variable="Elige"/>
+                        <if expression="(Elige == &quot;Aire&quot;) or (Elige == &quot;aire&quot;) or  (Elige == &quot;Venti&quot;) or (Elige == &quot;venti&quot;)">
+                            <then>
+                                <if expression="(Elige == &quot;Aire&quot;) or (Elige == &quot;aire&quot;)">
+                                    <then>
+                                        <output expression="&quot;&#191;Cu&#225;ntos d&#237;as ser&#237;an? &quot;" newline="True"/>
+                                        <input variable="DiasAire"/>
+                                        <assign variable="Total" expression="Total + (DiasAire * Aire)"/>
+                                    </then>
+                                    <else>
+                                        <output expression="&quot;&#191;Cu&#225;ntos d&#237;as ser&#237;an? &quot;" newline="True"/>
+                                        <input variable="DiasVenti"/>
+                                        <assign variable="Total" expression="Total + (DiasVenti * Venti)"/>
+                                    </else>
+                                </if>
+                            </then>
+                            <else>
+                                <if expression="(Elige == &quot;Estandar&quot;) or (Elige == &quot;estandar&quot;)">
+                                    <then>
+                                        <output expression="&quot;&#191;Cu&#225;ntos d&#237;as ser&#237;an? &quot;" newline="True"/>
+                                        <input variable="DiasEstandar"/>
+                                        <assign variable="Total" expression="Total + (DiasEstandar * Estandar)"/>
+                                    </then>
+                                    <else>
+                                        <output expression="&quot;Puede que se haya referido de forma incorrecta a la habitaci&#243;n.&quot;" newline="True"/>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                        <output expression="&quot;&#191;Desea otra habitaci&#243;n?&quot;" newline="True"/>
+                        <output expression="&quot;Si, si desea otra habitaci&#243;n. No, cuando sea el caso contrario.&quot;" newline="True"/>
+                        <input variable="Necesita"/>
+                    </do>
+                    <if expression="DiasEstandar &gt;= 7 or DiasAire &gt;= 7 or DiasVenti &gt;=7">
+                        <then>
+                            <output expression="&quot;Por su estad&#237;a de 7 d&#237;as se le aplicar&#225; un descuento del 10%.&quot;" newline="True"/>
+                            <assign variable="Total" expression="Total - (Total * 0.1)"/>
+                        </then>
+                        <else>
+                            <comment text="XD"/>
+                        </else>
+                    </if>
+                    <output expression="&quot;&#191;Desea a&#241;adir un seguro infantil? Su costo es de $10000.&quot;" newline="True"/>
+                    <output expression="&quot;Si, si desea a&#241;adirlo. No, si es el caso contrario.&quot;" newline="True"/>
+                    <input variable="Necesita"/>
+                    <if expression="(Necesita == &quot;Si&quot;) or (Necesita == &quot;si&quot;)">
+                        <then>
+                            <assign variable="Total" expression="Total + 10000"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <output expression="&quot;Por lo tanto, el precio total del hospedaje es de: $&quot; &amp; Total" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Gracias por visitarnos, que tengan buen d&#237;a.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

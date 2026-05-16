@@ -1,19 +1,19 @@
 markdown
-# ?? Algoritmo de Construcción de Casas (HouseBuilder Algorithm)
+#  Algoritmo de Construcción de Casas (HouseBuilder Algorithm)
 
 Este proyecto implementa un algoritmo lógico para la automatización y simulación de la construcción de una vivienda. El flujo de procesos detalla paso a paso desde la validación del terreno hasta la colocación de acabados finales como ventanas y techos.
 
-## ?? Descripción
+##  Descripción
 
 El sistema funciona como una secuencia de instrucciones para una "tortuga" o agente constructor. Analiza las condiciones iniciales del entorno (estabilidad del suelo) y procede mediante una serie de movimientos geométricos (giros, desplazamientos) y acciones estructurales (levantar muros, colocar techos) para erigir la estructura completa.
 
-## ?? Diagrama de Flujo
+##  Diagrama de Flujo
 
 El proyecto se basa en el siguiente diagrama de flujo que describe la lógica de control:
 
 *(Aquí iría tu imagen)*
 
-## ??? Fases del Algoritmo
+##  Fases del Algoritmo
 
 El proceso de construcción se divide en cuatro etapas principales:
 
@@ -46,7 +46,7 @@ El proceso de construcción se divide en cuatro etapas principales:
         *   **No:** Se omite este paso y se finaliza la estructura.
 *   **Fin:** El proceso concluye con la casa lista.
 
-## ?? Lógica de Movimiento
+##  Lógica de Movimiento
 
 El algoritmo utiliza coordenadas relativas y giros para navegar el espacio de construcción:
 *   `Girar a la izquierda/derecha X`: Cambia la orientación del constructor.
@@ -60,7 +60,7 @@ El algoritmo utiliza coordenadas relativas y giros para navegar el espacio de co
 3.  **Ejecución:** El sistema recorrerá automáticamente los nodos de decisión.
 4.  **Output:** Una estructura de casa definida por coordenadas y componentes (Muros, Techo, Ventanas).
 
-## ?? Notas de Desarrollo
+##  Notas de Desarrollo
 
 *   El diagrama incluye bucles y condicionales para asegurar que la estructura sea segura antes de añadir peso (techo).
 *   Se han incluido pasos de revisión (`Revisión estructural`) para simular controles de calidad en la construcción.

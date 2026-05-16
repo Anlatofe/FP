@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Notas"/>
+        <attribute name="authors" value="ANLATOFE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-17 08:15:10 p.&#8239;m."/>
+        <attribute name="created" value="QU5MQVRPRkU7QUlST0tBOzIwMjYtMDQtMTc7MDc6NTk6MjcgcC7igK9tLjsxMDcxNg=="/>
+        <attribute name="edited" value="QU5MQVRPRkU7QUlST0tBOzIwMjYtMDQtMTc7MDg6MTU6MTAgcC7igK9tLjsxOzEwODA5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Nota1, Nota2, Nota3, Promedio" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite las tres notas a promediar&quot;" newline="True"/>
+            <input variable="Nota1"/>
+            <input variable="Nota2"/>
+            <input variable="Nota3"/>
+            <assign variable="Promedio" expression="(Nota1 + Nota2 + Nota3) / 3"/>
+            <output expression="&quot;El promedio de las tres notas es de &quot; &amp; ToFixed (Promedio, 2)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
