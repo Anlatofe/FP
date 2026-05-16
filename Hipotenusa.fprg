@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Hipotenusa"/>
+        <attribute name="authors" value="ANLATOFE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-18 12:50:04 p.&#8239;m."/>
+        <attribute name="created" value="QU5MQVRPRkU7QUlST0tBOzIwMjYtMDQtMTg7MTI6NDE6MDMgcC7igK9tLjsxMDY5OA=="/>
+        <attribute name="edited" value="QU5MQVRPRkU7QUlST0tBOzIwMjYtMDQtMTg7MTI6NTA6MDQgcC7igK9tLjsxOzEwODA3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Cateto1, Cateto2, Hipotenusa, HipotenusaPrematura" type="Real" array="False" size=""/>
+            <output expression="&quot;Ingrese el valor del primer cateto.&quot;" newline="True"/>
+            <input variable="Cateto1"/>
+            <output expression="&quot;Ingrese ahora el valor del segundo cateto.&quot;" newline="True"/>
+            <input variable="Cateto2"/>
+            <assign variable="HipotenusaPrematura" expression="(Cateto1^2) + (Cateto2^2)"/>
+            <assign variable="Hipotenusa" expression="sqrt(HipotenusaPrematura)"/>
+            <output expression="&quot;El valor de la hipotenusa es de &quot; &amp; Hipotenusa" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
