@@ -1,4 +1,4 @@
-```markdown
+markdown
 # ?? Algoritmo de Construcción de Casas (HouseBuilder Algorithm)
 
 Este proyecto implementa un algoritmo lógico para la automatización y simulación de la construcción de una vivienda. El flujo de procesos detalla paso a paso desde la validación del terreno hasta la colocación de acabados finales como ventanas y techos.
@@ -67,4 +67,3 @@ El algoritmo utiliza coordenadas relativas y giros para navegar el espacio de co
 
 ---
 *Generado automáticamente para el proyecto de Algoritmo de Casas.*
-```
